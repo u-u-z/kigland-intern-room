@@ -98,6 +98,34 @@
 
 ---
 
+### Track 5: Kigurumi Market & Community Intelligence
+**Status**: Active monitoring  
+**Business Context**: KIGLAND's core user demographic - anime mask wearing culture at intersection of cosplay, VTubing, and AI face generation  
+**Key Questions**:
+- What percentage of kig performers want AI-generated faces vs handmade?
+- How big is the addressable market for "digital kig" (AR/VR/AI)?
+- What are pain points in current kig creation process?
+- Who are tastemakers and early adopters?
+- What is competitive landscape for AI-generated character faces?
+
+**Intelligence Sources**:
+- Twitter/X hashtags: #kigurumi, #着ぐるみ, #kig, #animegao
+- Bilibili kig content creators
+- Japanese kig communities
+- Major mask studio websites
+- Cosplay/VTubing industry reports
+
+**Deliverables**:
+- [ ] Market size estimation (TAM/SAM/SOM)
+- [ ] User persona development
+- [ ] Competitive analysis (AI face tools for kig)
+- [ ] Community sentiment tracking
+- [ ] Trend forecasting (3-6-12 months)
+
+**Issue**: #10
+
+---
+
 ## 📡 Intelligence Infrastructure
 
 ### arXiv Pipeline
@@ -126,6 +154,31 @@
 - Major AI labs' research blogs (OpenAI, DeepMind, Anthropic)
 - Top AI researchers' personal blogs
 - Manufacturing/engineering blogs (Cloudflare, Netflix-style)
+
+### Kigurumi Community Intelligence
+**Purpose**: Track KIGLAND's core user community and market trends  
+**Issue**: #10
+
+**Monitoring Channels**:
+1. **Social Media**
+   - Twitter/X: #kigurumi, #着ぐるみ, #kig, #animegao
+   - Bilibili: Kig content creators and trends
+   - Discord: Community servers and discussions
+
+2. **Industry Sources**
+   - Major mask studio blogs (Nagashima, etc.)
+   - Convention schedules (Comiket, Anime Expo)
+   - Cosplay industry reports
+
+3. **Technology Crossover**
+   - VTubing industry (overlapping user base)
+   - AI face generation tools for cosplay
+   - 3D printing/maker community for DIY shells
+
+**Deliverables**:
+- Weekly community pulse check
+- Monthly market trend analysis
+- Quarterly user persona updates
 
 ---
 
