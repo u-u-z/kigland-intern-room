@@ -21,5 +21,6 @@ Purpose:
 - `logs/` — non-sensitive operational logs (no credentials)
 
 ## Start here
-1) Read `docs/WORKFLOW.md`
-2) Pick an Issue, create a branch, do work, open a PR
+1) Read `constitution/AGENTS.md` (the constitution)
+2) Read `docs/WORKFLOW.md` (workflow)
+3) Pick an Issue, create a branch, do work, open a PR
