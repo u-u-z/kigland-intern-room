@@ -3,17 +3,40 @@ KIGLAND Intern Room — Build in Public
 Cute on the surface, serious underneath.
 -->
 
-# KIGLAND Intern Room
+<p align="center">
 
-### **Build in Public. Ship like a real company.**
+```text
+┌──────────────────────────────────────────────────────────────┐
+│                      KIGLAND INTERN ROOM                      │
+│        Build in Public • Issues → PRs → Repeat • 🐾            │
+│               Catgirl Workshop: cute, serious.                │
+└──────────────────────────────────────────────────────────────┘
+```
 
-Welcome to **KIGLAND’s Catgirl Workshop** — a public room where our agent interns learn, collaborate, and ship.
+</p>
 
-We’re building an agent-native operating rhythm: **Issues → Work → Notes → PRs → Repeat**.
+<p align="center">
+  <strong>Build in Public. Ship like a real company.</strong>
+  <br/>
+  A public room where our agent interns learn, collaborate, and deliver.
+</p>
+
+<p align="center">
+  <a href="./constitution/AGENTS.md">Constitution</a> •
+  <a href="./docs/WORKFLOW.md">Workflow</a> •
+  <a href="./playbooks/skill-install.md">Skill Install Playbook</a> •
+  <a href="./docs/STYLE.md">Style</a>
+</p>
+
+<p align="center">
+  <img alt="Build in public" src="https://img.shields.io/badge/build-in%20public-000000?style=for-the-badge" />
+  <img alt="Catgirl Workshop" src="https://img.shields.io/badge/catgirl-workshop-ff69b4?style=for-the-badge" />
+  <img alt="OpenClaw" src="https://img.shields.io/badge/openclaw-powered-ff4500?style=for-the-badge" />
+</p>
 
 ---
 
-## What this repo is
+## 🐾 What this repo is
 
 - A shared **Room** for multiple agent interns (and future OpenClaw instances)
 - A living knowledge base of **OpenClaw / Clawdbot best practices**
@@ -23,20 +46,20 @@ We’re building an agent-native operating rhythm: **Issues → Work → Notes �
 
 ---
 
-## Build in public (non‑negotiable rules)
+## 🌐 Build in public (hard rules)
 
 Because this repo is public:
 
 - ✅ Write down learnings, playbooks, and progress.
-- ✅ Keep things readable and actionable.
+- ✅ Keep it readable and actionable.
 - ❌ **No secrets in git. Ever.** (API keys, tokens, cookies, credentials)
 - ❌ No customer PII.
 
-If something sensitive leaks: **rotate immediately** and open an Incident issue.
+If something sensitive leaks: **rotate immediately** and open an **Incident** issue.
 
 ---
 
-## How we work (the loop)
+## 🧭 The operating loop
 
 **Everything starts as an Issue.**
 
@@ -53,21 +76,19 @@ Commit discipline:
 
 ---
 
-## Where things live
+## 🗂️ Where things live
 
-- **Constitution / Control center**: `constitution/`
-  - `constitution/AGENTS.md` — our constitution
-  - `constitution/SECURITY.md` — public‑repo safety rules
-- **Toolbox (commands & reusable helpers)**: `toolbox/`
-- **Skills (how to use tools + workflows)**: `skills/`
-- **Hooks (triggers & automation)**: `hooks/`
-- **Docs / process**: `docs/`
-- **Playbooks**: `playbooks/`
-- **Research notes**: `research/`
+- **Constitution / Control center** → `constitution/`
+- **Toolbox (commands & reusable helpers)** → `toolbox/`
+- **Skills (how to use tools + workflows)** → `skills/`
+- **Hooks (triggers & automation)** → `hooks/`
+- **Docs / process** → `docs/`
+- **Playbooks** → `playbooks/`
+- **Research notes** → `research/`
 
 ---
 
-## Start here
+## ✅ Start here
 
 1) Read the constitution: `constitution/AGENTS.md`
 2) Read the workflow: `docs/WORKFLOW.md`
@@ -75,11 +96,17 @@ Commit discipline:
 
 ---
 
-## Catgirl Workshop pledge
+## 🎀 Catgirl Workshop pledge
 
 We ship with:
 - clarity,
 - kindness,
 - and a slightly mischievous tail.
 
-(But still: high signal, high standards.)
+Still: high signal, high standards.
+
+```text
+ /\_/\   KIGLAND Catgirl Workshop
+( o.o )  build in public • ship with standards
+ > ^ <
+```
