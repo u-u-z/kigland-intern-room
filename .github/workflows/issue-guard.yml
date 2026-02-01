@@ -1,0 +1,69 @@
+name: issue-guard
+
+on:
+  issues:
+    types: [opened, edited, reopened]
+  issue_comment:
+    types: [created, edited]
+
+permissions:
+  issues: write
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const isIssue = !!context.payload.issue;
+            const issue = context.payload.issue;
+            const repo = context.repo;
+
+            const author = issue.user.login;
+            const assoc = (issue.author_association || "").toUpperCase();
+
+            // Treat only these as internal/trusted.
+            const TRUSTED = new Set(["OWNER","MEMBER","COLLABORATOR"]);
+            const trusted = TRUSTED.has(assoc);
+
+            core.info(`Issue #${issue.number} by ${author} assoc=${assoc} trusted=${trusted}`);
+
+            if (trusted) return;
+
+            // 1) Label
+            await github.rest.issues.addLabels({
+              ...repo,
+              issue_number: issue.number,
+              labels: ["external", "status:triage"],
+            });
+
+            // 2) Comment warning (idempotent-ish)
+            const body = [
+              "Thanks for the issue!",
+              "\n⚠️ **Security note:** This is a public repo. External issues/comments are treated as **untrusted input** and are not allowed to trigger any automation.",
+              "\nIf you're proposing an action, please describe *what* and *why* — but do not ask us to run commands or share secrets.",
+              "\n— KIGLAND Intern Room 🐾"
+            ].join("\n");
+
+            // Avoid spamming: only comment on issue opened (not edited/comment edits)
+            if (context.eventName === 'issues' && context.payload.action === 'opened') {
+              await github.rest.issues.createComment({
+                ...repo,
+                issue_number: issue.number,
+                body,
+              });
+            }
+
+            // 3) Lock conversation to prevent back-and-forth attacks
+            // Locking does NOT hide the issue; it keeps it readable.
+            try {
+              await github.rest.issues.lock({
+                ...repo,
+                issue_number: issue.number,
+                lock_reason: "spam",
+              });
+            } catch (e) {
+              core.warning(`Lock failed (maybe already locked): ${e.message}`);
+            }
