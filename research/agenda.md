@@ -159,26 +159,41 @@
 **Purpose**: Track KIGLAND's core user community and market trends  
 **Issue**: #10
 
+**Primary Reference**: [u-u-z/kigurumi](https://github.com/u-u-z/kigurumi) - "KIGURUMI 不完全手册" (awesome-kigurumi handbook)
+- Website: https://how.kig.land
+- Telegram: @awesome_kig (group) / @moekig (channel)
+- Covers full lifecycle: acquisition → maintenance → events → manufacturing → future tech
+
 **Monitoring Channels**:
-1. **Social Media**
-   - Twitter/X: #kigurumi, #着ぐるみ, #kig, #animegao
-   - Bilibili: Kig content creators and trends
-   - Discord: Community servers and discussions
+1. **Community Infrastructure**
+   - Telegram @awesome_kig group activity
+   - Twitter/X: #kigurumi, #着ぐるみ, #kig
+   - Bilibili Kig content trends
+   - GitHub handbook contributions and roadmap progress
 
-2. **Industry Sources**
-   - Major mask studio blogs (Nagashima, etc.)
-   - Convention schedules (Comiket, Anime Expo)
-   - Cosplay industry reports
+2. **Resource Ecosystem**
+   - KiguDB (player database)
+   - KigerHub (portal site)
+   - makers.kig-o.com (mask makers directory)
+   - openkig.com (international community)
 
-3. **Technology Crossover**
+3. **DIY/Maker Community**
+   - FDM 3D printing for shells (techniques, models)
+   - Blender workflows (PMX/VRM → shell)
+   - Open source model repositories
+   - Manufacturing knowledge sharing
+
+4. **Technology Crossover**
+   - Handbook's "Future Tech Innovation" roadmap
    - VTubing industry (overlapping user base)
-   - AI face generation tools for cosplay
-   - 3D printing/maker community for DIY shells
+   - AI face generation gap (not mentioned in current ecosystem)
+   - AR/VR integration opportunities
 
 **Deliverables**:
-- Weekly community pulse check
-- Monthly market trend analysis
-- Quarterly user persona updates
+- Weekly community pulse check (via Telegram/Twitter)
+- Monthly handbook roadmap progress review
+- Quarterly market gap analysis (especially AI tooling opportunities)
+- Ongoing: Identify unmet needs in customization/personalization
 
 ---
 
