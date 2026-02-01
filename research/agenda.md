@@ -227,6 +227,33 @@ Create immediate issue/alert when:
 
 ---
 
+### Track 6: Investment Ecosystem Intelligence
+**Status**: Active monitoring  
+**Business Context**: As MiraclePlus-backed company, must understand early-stage AI investment landscape, track investor theses, and identify ecosystem opportunities/partnerships  
+**Key Questions**:
+- What types of AI companies is MiraclePlus prioritizing now?
+- How has their thesis evolved since KIGLAND investment?
+- Who are most active co-investors in AI agent/robotics space?
+- What valuation ranges are realistic for our stage?
+- Which portfolio companies might become partners/competitors?
+- What market gaps are investors seeing but not funding?
+
+**Intelligence Sources**:
+- **MiraclePlus**: W25/S25/F25 batches, portfolio updates, Demo Day
+- **Chinese media**: 36Kr (daily), TechNode, LatePost, AI科技评论
+- **International**: TechCrunch, The Information, VentureBeat
+- **Data**: Crunchbase, IT桔子, investor Twitter/X accounts
+- **Network**: Co-investor patterns, follow-on funding flows
+
+**Deliverables**:
+- [ ] Weekly: MiraclePlus highlights + 36Kr AI digest
+- [ ] Monthly: Investment landscape heat map + portfolio health check
+- [ ] Quarterly: Sector deep dives + KIGLAND positioning recommendations
+
+**Issue**: #11
+
+---
+
 ## 🚫 Not In Scope
 
 - Academic curiosity without business relevance

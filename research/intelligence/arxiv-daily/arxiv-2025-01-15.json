@@ -1,0 +1,163 @@
+[
+  {
+    "id": "http://arxiv.org/abs/2501.09194v2",
+    "title": "Grounding Text-to-Image Diffusion Models for Controlled High-Quality Image Generation",
+    "summary": "Text-to-image (T2I) generative diffusion models have demonstrated outstanding performance in synthesizing diverse, high-quality visuals from text captions. Several layout-to-image models have been developed to control the generation process by utilizing a wide range of layouts, such as segmentation maps, edges, and human keypoints. In this work, we propose ObjectDiffusion, a model that conditions T2I diffusion models on semantic and spatial grounding information, enabling the precise rendering and placement of desired objects in specific locations defined by bounding boxes. To achieve this, we make substantial modifications to the network architecture introduced in ControlNet to integrate it with the grounding method proposed in GLIGEN. We fine-tune ObjectDiffusion on the COCO2017 training dataset and evaluate it on the COCO2017 validation dataset. Our model improves the precision and quality of controllable image generation, achieving an AP$_{\\text{50}}$ of 46.6, an AR of 44.5, and an FID of 19.8, outperforming the current SOTA model trained on open-source datasets across all three metrics. ObjectDiffusion demonstrates a distinctive capability in synthesizing diverse, high-quality, high-fidelity images that seamlessly conform to the semantic and spatial control layout. Evaluated in qualitative and quantitative tests, ObjectDiffusion exhibits remarkable grounding capabilities in closed-set and open-set vocabulary settings across a wide variety of contexts. The qualitative assessment verifies the ability of ObjectDiffusion to generate multiple detailed objects in varying sizes, forms, and locations.",
+    "published": "2025-01-15T22:55:26Z",
+    "updated": "2025-02-10T18:54:23Z",
+    "authors": [
+      "Ahmad Süleyman",
+      "Göksel Biricik"
+    ],
+    "primary_category": "cs.CV",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "abstract_url": "https://arxiv.org/abs/2501.09194v2",
+    "pdf_url": "https://arxiv.org/pdf/2501.09194v2",
+    "comment": null,
+    "journal_ref": null,
+    "doi": null,
+    "relevance_score": 10.8,
+    "matched_areas": [
+      "ai",
+      "vision"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2501.09203v1",
+    "title": "Unified Few-shot Crack Segmentation and its Precise 3D Automatic Measurement in Concrete Structures",
+    "summary": "Visual-Spatial Systems has become increasingly essential in concrete crack inspection. However, existing methods often lacks adaptability to diverse scenarios, exhibits limited robustness in image-based approaches, and struggles with curved or complex geometries. To address these limitations, an innovative framework for two-dimensional (2D) crack detection, three-dimensional (3D) reconstruction, and 3D automatic crack measurement was proposed by integrating computer vision technologies and multi-modal Simultaneous localization and mapping (SLAM) in this study. Firstly, building on a base DeepLabv3+ segmentation model, and incorporating specific refinements utilizing foundation model Segment Anything Model (SAM), we developed a crack segmentation method with strong generalization across unfamiliar scenarios, enabling the generation of precise 2D crack masks. To enhance the accuracy and robustness of 3D reconstruction, Light Detection and Ranging (LiDAR) point clouds were utilized together with image data and segmentation masks. By leveraging both image- and LiDAR-SLAM, we developed a multi-frame and multi-modal fusion framework that produces dense, colorized point clouds, effectively capturing crack semantics at a 3D real-world scale. Furthermore, the crack geometric attributions were measured automatically and directly within 3D dense point cloud space, surpassing the limitations of conventional 2D image-based measurements. This advancement makes the method suitable for structural components with curved and complex 3D geometries. Experimental results across various concrete structures highlight the significant improvements and unique advantages of the proposed method, demonstrating its effectiveness, accuracy, and robustness in real-world applications.",
+    "published": "2025-01-15T23:36:05Z",
+    "updated": "2025-01-15T23:36:05Z",
+    "authors": [
+      "Pengru Deng",
+      "Jiapeng Yao",
+      "Chun Li",
+      "Su Wang",
+      "Xinrun Li",
+      "Varun Ojha",
+      "Xuhui He",
+      "Takashi Matsumoto"
+    ],
+    "primary_category": "cs.CV",
+    "categories": [
+      "cs.CV",
+      "cs.RO"
+    ],
+    "abstract_url": "https://arxiv.org/abs/2501.09203v1",
+    "pdf_url": "https://arxiv.org/pdf/2501.09203v1",
+    "comment": null,
+    "journal_ref": null,
+    "doi": null,
+    "relevance_score": 8.4,
+    "matched_areas": [
+      "ai",
+      "vision"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2501.09186v1",
+    "title": "Guiding Retrieval using LLM-based Listwise Rankers",
+    "summary": "Large Language Models (LLMs) have shown strong promise as rerankers, especially in ``listwise'' settings where an LLM is prompted to rerank several search results at once. However, this ``cascading'' retrieve-and-rerank approach is limited by the bounded recall problem: relevant documents not retrieved initially are permanently excluded from the final ranking. Adaptive retrieval techniques address this problem, but do not work with listwise rerankers because they assume a document's score is computed independently from other documents. In this paper, we propose an adaptation of an existing adaptive retrieval method that supports the listwise setting and helps guide the retrieval process itself (thereby overcoming the bounded recall problem for LLM rerankers). Specifically, our proposed algorithm merges results both from the initial ranking and feedback documents provided by the most relevant documents seen up to that point. Through extensive experiments across diverse LLM rerankers, first stage retrievers, and feedback sources, we demonstrate that our method can improve nDCG@10 by up to 13.23% and recall by 28.02%--all while keeping the total number of LLM inferences constant and overheads due to the adaptive process minimal. The work opens the door to leveraging LLM-based search in settings where the initial pool of results is limited, e.g., by legacy systems, or by the cost of deploying a semantic first-stage.",
+    "published": "2025-01-15T22:23:53Z",
+    "updated": "2025-01-15T22:23:53Z",
+    "authors": [
+      "Mandeep Rathee",
+      "Sean MacAvaney",
+      "Avishek Anand"
+    ],
+    "primary_category": "cs.IR",
+    "categories": [
+      "cs.IR",
+      "cs.AI"
+    ],
+    "abstract_url": "https://arxiv.org/abs/2501.09186v1",
+    "pdf_url": "https://arxiv.org/pdf/2501.09186v1",
+    "comment": "16 pages, 2 figures, 3 tables",
+    "journal_ref": null,
+    "doi": null,
+    "relevance_score": 6.0,
+    "matched_areas": [
+      "ai"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2501.09187v1",
+    "title": "Patch-aware Vector Quantized Codebook Learning for Unsupervised Visual Defect Detection",
+    "summary": "Unsupervised visual defect detection is critical in industrial applications, requiring a representation space that captures normal data features while detecting deviations. Achieving a balance between expressiveness and compactness is challenging; an overly expressive space risks inefficiency and mode collapse, impairing detection accuracy. We propose a novel approach using an enhanced VQ-VAE framework optimized for unsupervised defect detection. Our model introduces a patch-aware dynamic code assignment scheme, enabling context-sensitive code allocation to optimize spatial representation. This strategy enhances normal-defect distinction and improves detection accuracy during inference. Experiments on MVTecAD, BTAD, and MTSD datasets show our method achieves state-of-the-art performance.",
+    "published": "2025-01-15T22:26:26Z",
+    "updated": "2025-01-15T22:26:26Z",
+    "authors": [
+      "Qisen Cheng",
+      "Shuhui Qu",
+      "Janghwan Lee"
+    ],
+    "primary_category": "cs.CV",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "abstract_url": "https://arxiv.org/abs/2501.09187v1",
+    "pdf_url": "https://arxiv.org/pdf/2501.09187v1",
+    "comment": "7 pages, Accepted to 36th IEEE ICTAI 2024",
+    "journal_ref": null,
+    "doi": null,
+    "relevance_score": 4.8,
+    "matched_areas": [
+      "manufacturing"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2502.10394v1",
+    "title": "A Coordination-based Approach for Focused Learning in Knowledge-Based Systems",
+    "summary": "Recent progress in Learning by Reading and Machine Reading systems has significantly increased the capacity of knowledge-based systems to learn new facts. In this work, we discuss the problem of selecting a set of learning requests for these knowledge-based systems which would lead to maximum Q/A performance. To understand the dynamics of this problem, we simulate the properties of a learning strategy, which sends learning requests to an external knowledge source. We show that choosing an optimal set of facts for these learning systems is similar to a coordination game, and use reinforcement learning to solve this problem. Experiments show that such an approach can significantly improve Q/A performance.",
+    "published": "2025-01-15T23:45:02Z",
+    "updated": "2025-01-15T23:45:02Z",
+    "authors": [
+      "Abhishek Sharma"
+    ],
+    "primary_category": "cs.AI",
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "abstract_url": "https://arxiv.org/abs/2502.10394v1",
+    "pdf_url": "https://arxiv.org/pdf/2502.10394v1",
+    "comment": null,
+    "journal_ref": null,
+    "doi": null,
+    "relevance_score": 1.2,
+    "matched_areas": [
+      "ai"
+    ]
+  },
+  {
+    "id": "http://arxiv.org/abs/2501.09192v3",
+    "title": "Estimation-Aware Trajectory Optimization with Set-Valued Measurement Uncertainties",
+    "summary": "In this paper, an optimization-based framework for generating estimation-aware trajectories is presented. In this setup, measurement (output) uncertainties are state-dependent and set-valued. Enveloping ellipsoids are employed to characterize state-dependent uncertainties with unknown distributions. The concept of regularity for set-valued output maps is then introduced, facilitating the formulation of the estimation-aware trajectory generation problem. Specifically, it is demonstrated that for output-regular maps, one can utilize a set-valued observability measure that is concave with respect to the finite horizon state trajectories. By maximizing this measure, estimation-aware trajectories can then be synthesized for a broad class of systems. Trajectory planning routines are also examined in this work, by which the observability measure is optimized for systems with locally linearized dynamics. To illustrate the effectiveness of the proposed approach, representative examples in the context of trajectory planning with vision-based estimation are presented. Moreover, the paper presents estimation-aware planning for an uncooperative Target-Rendezvous problem, where an Ego-satellite employs an onboard machine learning (ML)-based estimation module to realize the rendezvous trajectory.",
+    "published": "2025-01-15T22:50:02Z",
+    "updated": "2025-05-10T18:20:55Z",
+    "authors": [
+      "Aditya Deole",
+      "Mehran Mesbahi"
+    ],
+    "primary_category": "math.OC",
+    "categories": [
+      "math.OC",
+      "cs.RO",
+      "eess.SY"
+    ],
+    "abstract_url": "https://arxiv.org/abs/2501.09192v3",
+    "pdf_url": "https://arxiv.org/pdf/2501.09192v3",
+    "comment": "40 pages, 9 figures",
+    "journal_ref": null,
+    "doi": null,
+    "relevance_score": 1.2,
+    "matched_areas": [
+      "ai"
+    ]
+  }
+]
