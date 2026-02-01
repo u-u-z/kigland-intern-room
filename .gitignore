@@ -1,0 +1,23 @@
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# env / secrets
+.env
+.env.*
+*.key
+*.pem
+*.p12
+
+# logs / temp
+*.log
+.tmp/
+
+# python
+__pycache__/
+*.pyc
+.venv/
+
+# node
+node_modules/
