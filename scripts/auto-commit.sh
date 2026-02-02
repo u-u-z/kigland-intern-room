@@ -2,35 +2,61 @@
 # Auto-commit and push script for kigland-intern-room
 # Run this periodically to sync changes to GitHub
 
-REPO_DIR="/home/remi/clawd/kigland-intern-room"
-cd "$REPO_DIR" || exit 1
+set -e  # Exit on error
 
-# Check if there are changes
-if git diff --quiet && git diff --staged --quiet && [ -z "$(git status --porcelain)" ]; then
-    # No changes
+REPO_DIR="/home/remi/clawd/kigland-intern-room"
+LOG_FILE="/tmp/auto-commit.log"
+
+cd "$REPO_DIR" || {
+    echo "[$(date)] ERROR: Cannot cd to $REPO_DIR" >> "$LOG_FILE"
+    exit 1
+}
+
+echo "[$(date)] Starting auto-commit check..." >> "$LOG_FILE"
+
+# Check git status
+git_status=$(git status --porcelain 2>/dev/null || echo "ERROR")
+
+if [ "$git_status" = "ERROR" ]; then
+    echo "[$(date)] ERROR: git status failed" >> "$LOG_FILE"
+    exit 1
+fi
+
+if [ -z "$git_status" ]; then
+    echo "[$(date)] No changes to commit" >> "$LOG_FILE"
     exit 0
 fi
 
+echo "[$(date)] Found changes:" >> "$LOG_FILE"
+echo "$git_status" >> "$LOG_FILE"
+
 # Generate commit message based on changed files
-CHANGES=$(git status --porcelain | head -10)
 COMMIT_MSG="Auto-sync: $(date '+%Y-%m-%d %H:%M')"
 
-# Add specific context based on what changed
-if echo "$CHANGES" | grep -q "research/intelligence/"; then
+# Detect change types
+if echo "$git_status" | grep -q "research/intelligence/"; then
     COMMIT_MSG="$COMMIT_MSG | Daily intelligence update"
-fi
-
-if echo "$CHANGES" | grep -q "research/hacker-news/"; then
+elif echo "$git_status" | grep -q "research/hacker-news/"; then
     COMMIT_MSG="$COMMIT_MSG | HN source tracking"
-fi
-
-if echo "$CHANGES" | grep -q "memory/"; then
+elif echo "$git_status" | grep -q "research/wip/"; then
+    COMMIT_MSG="$COMMIT_MSG | Research WIP"
+elif echo "$git_status" | grep -q "memory/"; then
     COMMIT_MSG="$COMMIT_MSG | Memory updates"
+elif echo "$git_status" | grep -q "HEARTBEAT\|README\|\.md"; then
+    COMMIT_MSG="$COMMIT_MSG | Config updates"
 fi
 
-# Add all changes and commit
+# Add all changes (including new files)
 git add -A
-git commit -m "$COMMIT_MSG" || exit 0
+echo "[$(date)] Staged changes:" >> "$LOG_FILE"
+git diff --cached --stat >> "$LOG_FILE" 2>&1 || true
 
-# Push to origin
-git push origin main
+# Commit
+git commit -m "$COMMIT_MSG" >> "$LOG_FILE" 2>&1
+echo "[$(date)] Committed: $COMMIT_MSG" >> "$LOG_FILE"
+
+# Push
+git push origin main >> "$LOG_FILE" 2>&1
+echo "[$(date)] Pushed to origin/main" >> "$LOG_FILE"
+
+echo "[$(date)] Auto-commit complete" >> "$LOG_FILE"
