@@ -1,0 +1,73 @@
+{
+  "project": {
+    "name": "KIGLAND",
+    "description": "GitHub Trends Research for KIGLAND"
+  },
+  "tech_stack": {
+    "frontend": {
+      "frameworks": ["React", "Next.js", "Vue.js"],
+      "ui_libraries": ["shadcn/ui", "Tailwind CSS", "Material-UI"],
+      "languages": ["TypeScript", "JavaScript"]
+    },
+    "backend": {
+      "frameworks": ["NestJS", "Express.js", "FastAPI", "Django"],
+      "languages": ["TypeScript", "JavaScript", "Python"],
+      "apis": ["REST", "GraphQL", "tRPC"]
+    },
+    "ai_ml": {
+      "frameworks": ["PyTorch", "TensorFlow", "Transformers", "LangChain"],
+      "areas": ["LLM", "Computer Vision", "NLP", "MLOps"],
+      "tools": ["Hugging Face", "OpenAI API", "Ollama"]
+    },
+    "database": {
+      "sql": ["PostgreSQL", "MySQL"],
+      "nosql": ["MongoDB", "Redis"],
+      "orm": ["Prisma", "TypeORM", "SQLAlchemy"]
+    },
+    "devops": {
+      "container": ["Docker", "Kubernetes"],
+      "ci_cd": ["GitHub Actions", "GitLab CI"],
+      "cloud": ["AWS", "Azure", "GCP"]
+    },
+    "tools": {
+      "workflow": ["n8n", "Airflow"],
+      "monitoring": ["Prometheus", "Grafana"],
+      "testing": ["Jest", "Pytest", "Cypress"]
+    }
+  },
+  "monitoring": {
+    "languages": ["Python", "JavaScript", "TypeScript"],
+    "topics": [
+      "artificial-intelligence",
+      "machine-learning",
+      "deep-learning",
+      "llm",
+      "react",
+      "nextjs",
+      "nestjs",
+      "automation"
+    ],
+    "min_stars": 1000,
+    "max_results_per_category": 10
+  },
+  "keywords": {
+    "high_priority": [
+      "AI agent",
+      "LLM",
+      "LangChain",
+      "React",
+      "Next.js",
+      "NestJS",
+      "workflow automation",
+      "RAG"
+    ],
+    "medium_priority": [
+      "Prisma",
+      "shadcn",
+      "Tailwind",
+      "Docker",
+      "Kubernetes",
+      "PostgreSQL"
+    ]
+  }
+}

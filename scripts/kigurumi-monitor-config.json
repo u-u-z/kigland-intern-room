@@ -1,0 +1,78 @@
+{
+  "monitor": {
+    "name": "Kigurumi Market Intelligence Monitor",
+    "version": "1.0.0",
+    "phase": "Phase 1 - Telegram Community Monitoring"
+  },
+  "keywords": {
+    "primary": [
+      "kigurumi",
+      "着ぐるみ", 
+      "キグルミ",
+      "kig",
+      "头壳",
+      "kiger"
+    ],
+    "secondary": [
+      "animegao",
+      "アニメ顔",
+      "mask",
+      "面具",
+      "hadalabo",
+      "肌ラボ",
+      "bodysuit",
+      "kigurumi mask"
+    ],
+    "product": [
+      "头壳出售",
+      "kigurumi sale",
+      "着ぐるみ 販売",
+      "mask for sale",
+      "commission",
+      "委托",
+      "转让",
+      "二手"
+    ],
+    "event": [
+      "event",
+      "活动",
+      "展会",
+      "convention",
+      "meetup",
+      "聚会",
+      "cf",
+      "comiket",
+      "wonder festival",
+      "wf"
+    ]
+  },
+  "sources": {
+    "telegram_channels": [
+      {"name": "Kigurumi World", "id": "@kigurumi_world", "language": "en", "status": "pending_verification"},
+      {"name": "Animegao Kigurumi", "id": "@animegao_kigurumi", "language": "en", "status": "pending_verification"},
+      {"name": "着ぐるみ情報局", "id": "@kigurumi_jp_info", "language": "jp", "status": "pending_verification"},
+      {"name": "Kigurumi 中文圈", "id": "@kigurumi_cn", "language": "zh", "status": "pending_verification"}
+    ],
+    "telegram_groups": [
+      {"name": "Kigurumi Fan Club", "id": "@kigurumifanclub", "language": "en", "status": "pending_verification"},
+      {"name": "着ぐるみ好き", "id": "@kigurumi_suki", "language": "jp", "status": "pending_verification"},
+      {"name": "KIG 头壳交流", "id": "@kig_head_exchange", "language": "zh", "status": "pending_verification"}
+    ],
+    "discord_servers": [
+      {"name": "Kigurumi World", "invite": "pending", "language": "en"},
+      {"name": "着ぐるみの森", "invite": "pending", "language": "jp"}
+    ]
+  },
+  "settings": {
+    "fetch_interval_minutes": 15,
+    "message_limit_per_fetch": 100,
+    "data_retention_days": 90,
+    "min_keyword_match": 1
+  },
+  "storage": {
+    "format": "jsonl",
+    "compression": false,
+    "backup_enabled": true,
+    "backup_interval_hours": 24
+  }
+}

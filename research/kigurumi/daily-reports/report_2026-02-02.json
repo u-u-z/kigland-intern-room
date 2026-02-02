@@ -1,0 +1,99 @@
+{
+  "report_date": "2026-02-02",
+  "generated_at": "2026-02-02T20:18:40.584152",
+  "period": "daily",
+  "summary": {
+    "new_messages_today": 11,
+    "total_messages_week": 11,
+    "active_sources": 4,
+    "active_users": 10
+  },
+  "activity": {
+    "by_hour": {
+      "18": 3,
+      "20": 8
+    },
+    "by_source": {
+      "Kigurumi World": 4,
+      "着ぐるみ情報局": 3,
+      "KIG 头壳交流": 3,
+      "Kigurumi Fan Club": 1
+    },
+    "by_type": {
+      "null": 3,
+      "discussion": 6,
+      "sale": 2
+    }
+  },
+  "content_analysis": {
+    "top_keywords": {
+      "kig": 7,
+      "kigurumi": 5,
+      "mask": 5,
+      "hadalabo": 3,
+      "着ぐるみ": 2,
+      "头壳": 2,
+      "dollkii": 2,
+      "comiket": 1,
+      "nfd": 1,
+      "定制": 1,
+      "kigland": 1,
+      "niya": 1,
+      "bodysuit": 1,
+      "sell": 1,
+      "kigdom": 1
+    },
+    "trending_hashtags": [
+      {
+        "tag": "#kigurumi",
+        "count": 5
+      },
+      {
+        "tag": "#dollkii",
+        "count": 2
+      },
+      {
+        "tag": "#mask",
+        "count": 1
+      },
+      {
+        "tag": "#forsale",
+        "count": 1
+      },
+      {
+        "tag": "#help",
+        "count": 1
+      }
+    ],
+    "hot_topics": [
+      "交易讨论 (2 条)"
+    ]
+  },
+  "user_personas": {
+    "enthusiast": [],
+    "buyer": [
+      "kig_fan_01"
+    ],
+    "seller": [],
+    "creator": [],
+    "lurker": [
+      "admin",
+      "editor",
+      "user123",
+      "jp_editor",
+      "user_cn_123",
+      "kig_collector",
+      "user_1_1",
+      "jp_user_1",
+      "cn_user_1"
+    ]
+  },
+  "market_trends": {
+    "sentiment": {
+      "neutral": 9,
+      "positive": 2
+    },
+    "sale_activity": 2,
+    "event_mentions": 0
+  }
+}

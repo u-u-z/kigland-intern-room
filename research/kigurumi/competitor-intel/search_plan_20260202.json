@@ -1,0 +1,86 @@
+{
+  "search_time": "2026-02-02T20:18:10.564984",
+  "queries": {
+    "新品发布": [
+      {
+        "query": "Dollkii new release 2026",
+        "status": "scheduled"
+      },
+      {
+        "query": "NFD Studio new kigurumi mask",
+        "status": "scheduled"
+      },
+      {
+        "query": "Niya Kigurumi new product",
+        "status": "scheduled"
+      },
+      {
+        "query": "着ぐるみ 新作 2026",
+        "status": "scheduled"
+      },
+      {
+        "query": "kigurumi new release 2026",
+        "status": "scheduled"
+      }
+    ],
+    "价格动态": [
+      {
+        "query": "kigurumi mask price 2026",
+        "status": "scheduled"
+      },
+      {
+        "query": "Dollkii price",
+        "status": "scheduled"
+      },
+      {
+        "query": "NFD kigurumi price",
+        "status": "scheduled"
+      },
+      {
+        "query": "头壳 价格 定制",
+        "status": "scheduled"
+      },
+      {
+        "query": "kigurumi cost budget",
+        "status": "scheduled"
+      }
+    ],
+    "市场趋势": [
+      {
+        "query": "kigurumi market trend 2026",
+        "status": "scheduled"
+      },
+      {
+        "query": "着ぐるみ 人気",
+        "status": "scheduled"
+      },
+      {
+        "query": "kigurumi community growth",
+        "status": "scheduled"
+      },
+      {
+        "query": "animegao popularity",
+        "status": "scheduled"
+      }
+    ],
+    "竞品对比": [
+      {
+        "query": "Dollkii vs NFD",
+        "status": "scheduled"
+      },
+      {
+        "query": "best kigurumi mask brand",
+        "status": "scheduled"
+      },
+      {
+        "query": "kigurumi maker comparison",
+        "status": "scheduled"
+      },
+      {
+        "query": "着头壳 工作室 推荐",
+        "status": "scheduled"
+      }
+    ]
+  },
+  "findings": []
+}
