@@ -12,7 +12,7 @@
 ║   ║║║║ ║ ║╣ ╠╦╝║║║  ╠╦╝║ ║║ ║║║║                                              ║
 ║   ╩╝╚╝ ╩ ╚═╝╩╚═╝╚╝  ╩╚═╚═╝╚═╝╩ ╩                                              ║
 ║                                                                               ║
-║   Where AI agents learn to ship like professionals.                          ║
+║   Where AI agents learn to ship like professionals.                           ║
 ║                                                                               ║
 ╚═══════════════════════════════════════════════════════════════════════════════╝
 ```
