@@ -23,7 +23,7 @@ scripts/
 ### 1. 运行监测脚本
 
 ```bash
-cd /home/remi/.openclaw/workspace
+cd /home/remi/clawd/kigland-intern-room
 python3 scripts/kigurumi-monitor.py
 ```
 

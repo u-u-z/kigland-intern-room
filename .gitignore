@@ -10,9 +10,11 @@
 *.pem
 *.p12
 
-# logs / temp
+# logs / temp (internal content belongs in clawd/memory/, not here)
 *.log
 .tmp/
+logs/
+research/status-reports/
 
 # python
 __pycache__/

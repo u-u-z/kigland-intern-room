@@ -7,7 +7,12 @@ Hooks define when agents should do work without being explicitly prompted.
 - **P1**: periodic summaries (daily/weekly)
 - **P2**: silent maintenance (logs, indexes)
 
-## Where things live
-- `heartbeat/` — periodic checklists (best-effort cadence)
-- `cron/` — schedule-driven tasks (precise timing)
-- `events/` — external triggers / webhooks (future)
+## Current Files
+- `triggers.md` — trigger policy (P0/P1/P2 examples, focus rules)
+
+## Hook Configuration
+Hooks are configured in:
+- **Heartbeat**: `clawd/HEARTBEAT.md` (agent state machine, issue polling)
+- **Cron**: System cron or external scheduler
+
+See `triggers.md` for trigger policy details.
