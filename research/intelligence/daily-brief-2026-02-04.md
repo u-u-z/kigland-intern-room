@@ -1,0 +1,235 @@
+# AI 日报 - 2026-02-04
+
+> 数据时间: 2026-02-04 10:00 CST
+> 来源: Hacker News + arXiv + GitHub Trends
+
+---
+
+## 🚨 头条速览
+
+| 标题 | 来源 | 热度 | 标签 |
+|------|------|------|------|
+| **Qwen3-Coder-Next 发布** | HN | 577🔥 | 中国LLM |
+| **Xcode 26.3 内置 Coding Agents** | HN | 236 | Apple AI |
+| **ZEST: 人形机器人零样本技能迁移** | arXiv | - | 机器人突破 |
+| **Agent Skills 平台** | HN | 377 | Agent基础设施 |
+| **法国弃用 Zoom/Teams** | HN | 785🔥 | 数字主权 |
+
+---
+
+## 🤖 AI/Agent 动态
+
+### 模型发布与更新
+
+**1. Qwen3-Coder-Next (阿里巴巴)**
+- **热度**: HN 577 points，359评论 (今日最热技术话题)
+- **链接**: https://qwen.ai
+- **影响**: 中国代码大模型持续获得国际关注，与GitHub Copilot竞争加剧
+- **代码**: https://github.com/QwenLM
+
+**2. Xcode 26.3 Coding Agents**
+- **热度**: HN 236 points，196评论
+- **来源**: Apple
+- **意义**: 苹果正式进入AI编程领域，IDE内AI辅助成为行业标配
+- **竞争格局**: GitHub Copilot vs Xcode Coding Agents vs Cursor
+
+### Agent 基础设施
+
+**3. Agent Skills (agentskills.io)**
+- **热度**: HN 377 points，213评论
+- **定位**: Agent能力模块平台
+- **趋势**: Agent生态系统建设加速，可复用Agent能力成为新赛道
+
+**4. ADP-MA: Autonomous Data Processing using Meta-Agents**
+- **论文**: https://arxiv.org/abs/2602.00307
+- **创新**: 元代理动态构建数据管道，分层代理编排
+- **作者**: Udayan Khurana
+
+**5. Agentic Evolution 框架 (A-Evolve)**
+- **论文**: https://arxiv.org/abs/2602.00359
+- **观点**: 代理进化是LLM进化的必然路径
+- **团队**: 多机构合作 (Minhua Lin et al.)
+
+---
+
+## 🤖 机器人/具身智能
+
+### 重大突破
+
+**6. ZEST: Zero-shot Embodied Skill Transfer**
+- **论文**: https://arxiv.org/abs/2602.00401
+- **机构**: Boston Dynamics, 等多机构
+- **亮点**: 
+  - 支持Atlas人形机器人动态技能(爬行、街舞)
+  - 支持Unitree G1跳舞、爬箱
+  - 支持Spot四足机器人连续后空翻
+  - 零样本sim-to-real迁移
+- **评级**: ⭐⭐⭐⭐⭐ Breakthrough
+
+**7. VLA 模型安全研究: INFUSE 后门攻击**
+- **论文**: https://arxiv.org/abs/2602.00500
+- **发现**: VLA模型后门可在用户微调后存活，攻击成功率91%(仿真)/79.8%(真实)
+- **警示**: 物理世界部署的VLA模型存在严重安全隐患
+
+### 效率优化
+
+**8. 自适应视觉Token缓存加速VLA**
+- **论文**: https://arxiv.org/abs/2602.00686
+- **效果**: 1.76倍推理加速，同时提升成功率1.9-5.0个百分点
+- **意义**: VLA模型部署成本大幅降低
+
+**9. ConLA: 从人类视频对比学习**
+- **论文**: https://arxiv.org/abs/2602.00557
+- **突破**: 首次超越真实机器人轨迹预训练性能
+- **意义**: 人类视频成为机器人学习的重要数据来源
+
+---
+
+## 🧠 技术论文亮点
+
+### 推理与规划
+
+| 论文 | 核心贡献 | 机构 |
+|------|----------|------|
+| L-ICL: Localized In-Context Learning | LLM规划器错误定位纠正，89%成功率 | CMU |
+| Do Latent-CoT Models Think Step-by-Step? | 潜在思维链机制研究 | - |
+| ReasoningMath-Plus | 150题结构化推理基准 | 多机构 |
+
+### 多模态与记忆
+
+| 论文 | 核心贡献 | 意义 |
+|------|----------|------|
+| DebateOCR | 跨模态记忆压缩，token减少92% | 多代理辩论效率 |
+| L²-VMAS | 双潜在记忆，token减少21-44% | 视觉多智能体 |
+| PolarMem | 极化图记忆，无需训练 | 可验证多模态代理 |
+
+### 安全与对齐
+
+| 论文 | 核心贡献 | 警示 |
+|------|----------|------|
+| Emergent Misalignment Assessment | 11领域不对齐风险评估 | 微调安全风险 |
+| CARE-RFT | 置信度锚定强化微调 | 推理vs可信度权衡 |
+
+---
+
+## 💻 基础设施与工具
+
+### 数据库与存储
+
+**10. AliSQL (阿里巴巴)**
+- **HN热度**: 144 points
+- **链接**: https://github.com/alibaba/AliSQL
+- **特点**: MySQL + 向量数据库 + DuckDB引擎
+- **趋势**: 传统数据库与AI能力融合
+
+**11. Bunny Database**
+- **HN热度**: 246 points
+- **链接**: https://bunny.net
+
+### 开发工具
+
+**12. Deno Sandbox**
+- **HN热度**: 329 points
+- **链接**: https://deno.com
+- **特点**: 安全执行JavaScript/TypeScript
+
+**13. Prek (Rust pre-commit)**
+- **HN热度**: 192 points
+- **链接**: https://github.com/j178/prek
+- **特点**: Rust重写，更快更好
+
+---
+
+## 🌍 政策与商业动态
+
+### 数字主权
+
+**14. 法国弃用 Zoom 和 Teams**
+- **HN热度**: 785 points (今日最高)
+- **来源**: AP News
+- **背景**: 欧洲寻求数字自主，减少对美国科技依赖
+- **影响**: 欧洲本土协作工具机会窗口
+
+### 创业融资
+
+**15. Y Combinator 接受稳定币支付**
+- **HN热度**: 78 points
+- **意义**: 传统VC拥抱加密货币
+
+**16. Launch HN: Modelence (YC S25)**
+- **HN热度**: 63 points
+- **定位**: TypeScript + MongoDB 应用构建器
+
+---
+
+## 📊 数据统计
+
+### 来源分布
+
+```
+Hacker News        ████████░░  14篇亮点
+arXiv cs.AI        ██████░░░░  18篇论文
+arXiv cs.CV        ████░░░░░░  10篇论文
+arXiv cs.LG        ████░░░░░░  11篇论文
+arXiv cs.RO        ██████░░░░  17篇论文
+```
+
+### 热门标签
+
+| 标签 | 数量 | 热度 |
+|------|------|------|
+| Agent | 12 | ⭐⭐⭐⭐⭐ |
+| VLA | 8 | ⭐⭐⭐⭐⭐ |
+| LLM | 6 | ⭐⭐⭐⭐ |
+| Robotics | 15 | ⭐⭐⭐⭐⭐ |
+| Multimodal | 10 | ⭐⭐⭐⭐ |
+| Safety | 5 | ⭐⭐⭐ |
+
+---
+
+## 🚨 Alert Thresholds
+
+| 类型 | 级别 | 触发项 |
+|------|------|--------|
+| Major model release | P1 | Qwen3-Coder-Next |
+| Breakthrough paper | P1 | ZEST: 人形机器人零样本技能迁移 |
+| $50M+ funding | - | 未检测到 |
+
+---
+
+## 💡 关键洞察
+
+### 技术趋势
+
+1. **Agentic Evolution**: 代理进化成为LLM持续适应的新范式，从静态训练转向部署时进化
+2. **VLA 加速落地**: 多个工作聚焦VLA模型效率优化，1.76倍加速成果显著
+3. **人形机器人突破**: ZEST实现零样本sim-to-real，人形机器人技能获取成本大幅降低
+4. **多模态记忆创新**: 跨模态记忆压缩技术token减少90%+，多代理系统可扩展性突破
+5. **AI安全受关注**: VLA后门攻击研究揭示物理世界部署风险
+
+### 商业动态
+
+1. **中国AI出海加速**: Qwen3获得国际社区高度关注(577 upvotes)
+2. **Apple加入AI编程**: Xcode 26.3内置coding agents，IDE AI化趋势明确
+3. **欧洲数字主权**: 法国弃用Zoom/Teams，本土替代方案机会
+4. **Agent基础设施**: Agent Skills等平台涌现，Agent生态建设元年
+
+### 值得关注的方向
+
+- **具身智能零样本迁移**: ZEST等人形机器人工作
+- **Agent记忆与推理**: DebateOCR、PolarMem等记忆压缩技术
+- **VLA安全**: 后门攻击等安全研究
+- **边缘AI**: ELLMPEG等端侧部署方案
+
+---
+
+## 📁 相关文件
+
+- HN详细报告: `research/hacker-news/2026-02-04.md`
+- arXiv论文集: `research/intelligence/arxiv-daily/arxiv-2026-02-04.md`
+- GitHub趋势: `research/github-trends/2026-02-04.md`
+
+---
+
+*Generated by RemiBot Daily Learning Pipeline*
+*Report Time: 2026-02-04 10:00 CST*
